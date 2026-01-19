@@ -3,80 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>School of Tech — Scratch, Robotics & Python Courses</title>
-  <meta name="description" content="Scratch education, robotics education, and Python development courses." />
+  <title>School of Tech — Scratch · Robotics · Python</title>
+  <meta name="description" content="Courses in Scratch education, robotics education, and Python development." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
+  <main class="page">
+    <header class="site-header">
       <h1 class="brand">School of Tech</h1>
-      <nav class="nav">
-        <a href="#scratch">Scratch</a>
-        <a href="#robotics">Robotics</a>
-        <a href="#python">Python</a>
-        <a href="#gallery">Image</a>
-      </nav>
-    </div>
-  </header>
+      <p class="tagline">Scratch • Robotics • Python — Learn by building</p>
+    </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Learn by building — Scratch, Robotics & Python</h2>
-      <p>Hands-on courses designed for beginners and intermediate learners. Projects, workshops and guided lessons that make learning fun and practical.</p>
-    </section>
+    <section class="card">
+      <h2>Our Courses</h2>
 
-    <section id="scratch" class="cards">
-      <article class="card">
-        <h3>Scratch Education</h3>
-        <p>Introduce programming concepts with visual blocks. Great for younger learners to create games, animations and interactive stories.</p>
-        <ul>
-          <li>Block-based programming</li>
-          <li>Game & animation projects</li>
-          <li>Classroom-ready lesson plans</li>
-        </ul>
-      </article>
+      <div class="grid">
+        <article>
+          <h3>Scratch Education</h3>
+          <p>Block-based programming to introduce computational thinking and creative projects for younger learners.</p>
+        </article>
 
-      <article id="robotics" class="card">
-        <h3>Robotic Education</h3>
-        <p>Hands-on robotics courses using beginner-friendly kits and sensors to teach logic, circuits and physical computing.</p>
-        <ul>
-          <li>Beginner to advanced tracks</li>
-          <li>Sensors, motors & controllers</li>
-          <li>Project-based learning</li>
-        </ul>
-      </article>
+        <article>
+          <h3>Robotics Education</h3>
+          <p>Hands-on robotics with simple kits and sensors — build, test and program real devices.</p>
+        </article>
 
-      <article id="python" class="card">
-        <h3>Python Development</h3>
-        <p>Learn Python for automation, web, data and more — from fundamentals to real-world projects and best practices.</p>
-        <ul>
-          <li>Python basics & data types</li>
-          <li>Web & automation projects</li>
-          <li>Intro to data & libraries</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="gallery" class="drop-section">
-      <h3>Drop an Image (Preview)</h3>
-      <p>Drag & drop an image into the box below or click to choose a file. This preview works entirely in your browser.</p>
-
-      <div id="drop-area" class="drop-area" aria-label="Image drop area">
-        <form class="upload-form" onsubmit="return false;">
-          <p>Drag & drop an image here, or <label for="fileElem" class="file-label">browse</label></p>
-          <input type="file" id="fileElem" accept="image/*" />
-        </form>
-        <div id="preview" class="preview" aria-live="polite"></div>
+        <article>
+          <h3>Python Development</h3>
+          <p>From fundamentals to projects: automation, web basics and an introduction to data tools.</p>
+        </article>
       </div>
-      <p class="note">Note: Uploaded images are previewed client-side only and are not saved to the server.</p>
+
+      <footer class="card-foot">
+        <p>Images and additional resources can be added later inside the <code>assets/images/</code> folder.</p>
+      </footer>
     </section>
 
-    <footer class="footer">
-      <p>© <span id="year"></span> School of Tech — Build. Learn. Share.</p>
+    <footer class="site-footer">
+      <small>© <span id="year">2026</span> School of Tech — Build. Learn. Share.</small>
     </footer>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
