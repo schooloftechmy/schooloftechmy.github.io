@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School of Tech — Scratch, Robotics & Python Courses</title>
+  <meta name="description" content="Scratch education, robotics education, and Python development courses." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">School of Tech</h1>
+      <nav class="nav">
+        <a href="#scratch">Scratch</a>
+        <a href="#robotics">Robotics</a>
+        <a href="#python">Python</a>
+        <a href="#gallery">Image</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Learn by building — Scratch, Robotics & Python</h2>
+      <p>Hands-on courses designed for beginners and intermediate learners. Projects, workshops and guided lessons that make learning fun and practical.</p>
+    </section>
+
+    <section id="scratch" class="cards">
+      <article class="card">
+        <h3>Scratch Education</h3>
+        <p>Introduce programming concepts with visual blocks. Great for younger learners to create games, animations and interactive stories.</p>
+        <ul>
+          <li>Block-based programming</li>
+          <li>Game & animation projects</li>
+          <li>Classroom-ready lesson plans</li>
+        </ul>
+      </article>
+
+      <article id="robotics" class="card">
+        <h3>Robotic Education</h3>
+        <p>Hands-on robotics courses using beginner-friendly kits and sensors to teach logic, circuits and physical computing.</p>
+        <ul>
+          <li>Beginner to advanced tracks</li>
+          <li>Sensors, motors & controllers</li>
+          <li>Project-based learning</li>
+        </ul>
+      </article>
+
+      <article id="python" class="card">
+        <h3>Python Development</h3>
+        <p>Learn Python for automation, web, data and more — from fundamentals to real-world projects and best practices.</p>
+        <ul>
+          <li>Python basics & data types</li>
+          <li>Web & automation projects</li>
+          <li>Intro to data & libraries</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="gallery" class="drop-section">
+      <h3>Drop an Image (Preview)</h3>
+      <p>Drag & drop an image into the box below or click to choose a file. This preview works entirely in your browser.</p>
+
+      <div id="drop-area" class="drop-area" aria-label="Image drop area">
+        <form class="upload-form" onsubmit="return false;">
+          <p>Drag & drop an image here, or <label for="fileElem" class="file-label">browse</label></p>
+          <input type="file" id="fileElem" accept="image/*" />
+        </form>
+        <div id="preview" class="preview" aria-live="polite"></div>
+      </div>
+      <p class="note">Note: Uploaded images are previewed client-side only and are not saved to the server.</p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> School of Tech — Build. Learn. Share.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
